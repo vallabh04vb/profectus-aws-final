@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-ponzi-hat: "Ponzi Hat";
+  
+    /* font sizes */
+    --font-size-13xl: 32px;
+    --font-size-17xl: 36px;
+    --font-size-5xl: 24px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-lavender: #e1d3e7;
+    --color-lavenderblush: #fbf1ff;
+    --color-gainsboro-100: rgba(217, 217, 217, 0);
+  }
+  

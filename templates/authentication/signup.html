@@ -1,0 +1,199 @@
+
+    {% extends 'authentication/base.html' %}
+    {% block content %}
+{% comment %} {% if messages %}
+{% for message in messages%}
+<div class="alert alert-{{ messages.tags }} alert-dismissible fade show" role="alert" style="margin: 0">
+  <strong>{{ message }}</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %} 
+{%endif%} {% endcomment %}
+
+<link rel="stylesheet" href="./static/css/signup.css" />
+<link rel="stylesheet" href="./static/css/style.css" />
+
+    {% comment %} {% for message in messages%} {% endcomment %}
+    {% comment %} <div class="alert alert alert-dismissible false show" role="alert">
+        <strong>Message:</strong>{{message}}
+        <button type="submit" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span> 
+        </button>
+    </div> {% endcomment %}
+    {% comment %} <div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin:0;z-index:5;">
+        <strong>{{message}}</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div> {% endcomment %}
+
+    
+
+    <style>
+        input,select{
+            background: transparent;
+            border: 1px solid white;
+            width: 26vh;
+            padding: 0.5vh;
+            color: rgb(76, 73, 76);
+            border-radius: 0.5vh;
+            
+                background-image: url("./static/images/public/depositphotos-201446926stockphotogradientbackgroundblacknightdark-2@2x.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+           
+              
+        }
+    </style>
+
+  
+
+    <div class="reg-outer-container">
+       
+
+        <img
+          class="depositphotos-201446926-stock-icon"
+          alt=""
+          id="signupbg"
+          src="./static/images/public/depositphotos-201446926stockphotogradientbackgroundblacknightdark-2@2x.png"
+        /> 
+        {% comment %} {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }} alert-dismissible fade show" style="z-index:999; color: white; top: 0px; position: absolute; left: 0;" role="alert" style="margin: 0">
+            <strong>{{ message }}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %} {% endcomment %}
+
+    {% if messages %}
+    {% for message in messages%}
+    <div class="alert alert-{{ messages.tags }} alert-dismissible fade show" style="z-index:999;width: 100%; background: white;  top: 0px; position: absolute; left: 0;" role="alert" style="margin: 0">
+      <strong>{{ message }}</strong>
+      <button type="button" id="close" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %} 
+    {%endif%}
+        <div class="content"   style="color:white;">
+            <div class="guideline"  id="guide" style=" right: 705px;">
+                <div class="guidediv" style="margin-top: 50px;">
+                    <p style="color:white;" ><i class="fa fa-check-circle" aria-hidden="true"></i> This Fellowship program is for IIT Bombay students only.</p>
+                  
+                    <p style="color:white;"><b>Note:</b> A report of each fellow would be submitted to the Dean of student affairs at the end of their fellowship tenure.</p>
+                </div>
+                   <br>
+                   <div class="guidediv">
+                       <h4 style="color:white;">REGISTRATION</h4>
+                    <p style="color:white;"><i class="fa fa-check-circle" aria-hidden="true"></i> Candidates should upload their one page resume.</p>
+                     <p style="color:white;"><i class="fa fa-check-circle" aria-hidden="true"></i> Candidate must upload a drive link in which the one page resume should be present in a PDF format. </p>
+                     <p style="color:white;"><i class="fa fa-check-circle" aria-hidden="true"></i> The PDF file name must be Roll_Number.pdf where 'Roll_Number' is your IIT Bombay enrolled roll number. </p>
+                     
+                </div>
+                   <br>
+                <div  class="guidediv">
+                    <h4 style="color:white;">PENALTY</h4>
+                    <p style="color:white;"><i class="fa fa-check-circle" aria-hidden="true"></i> A report of each fellow would be submitted to the Dean of student affairs at the end of their fellowship tenure. 
+                    </p><br>
+                     <p style="color:white;" >If the candidate is found to be</p>
+                      <p style="color:white;">-is found to be involved in any malpractices during the fellowship duration
+                        <br>
+                        -quits the fellowship before completing the designated duration 
+                    <br>
+                  -rejects the fellowship after accepting it</p><br>
+                    <p style="color:white;"><b>It would lead to bad remarks being noted in his/her final report, which will be sent to the Dean of Student Affairs. The candidate may also face additional penalties. </b></p>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon1" id="icon1" onclick="guide()" style="text-decoration: none;">
+                Guidelines
+            </a>
+            
+
+
+            <div class="inner-container"  >
+               
+                <div class="form" data-aos="slide-left"data-aos-duration="1000"   style="color:white" >
+                    <form action="/signup" method="post" style="right: 5px;">
+                        <div class="inner-form" >
+                           
+                            {% csrf_token %}
+                          
+
+
+                            <input type="text" id="username"data-aos="fade-down-right" data-aos-duration="1000" name ="username"  style="color:white"placeholder="Create a username" required>
+                            <br>
+                            <input type="text" id="name" data-aos="fade-down-right" data-aos-duration="1000"name ="name"   style="color:white" placeholder="Enter Your Name" required>
+                            <br>
+                            <input type="email" id="email"data-aos="fade-down-right" data-aos-duration="1000"  style="color:white"  name ="email" placeholder="Enter Your Email" required>
+                            <br>
+                            <input type="phone" id="contact" data-aos="fade-down-right" data-aos-duration="1000"name ="contact"   style="color:white" placeholder="Enter Your Contact Number" required>
+                            <br>
+                            <input type="text" name="roll" data-aos="fade-down-right" data-aos-duration="1000" style="color:white" placeholder="Enter Your Roll Number" required>
+                            <br>
+                            <div class="input-group" data-aos="fade-down-right" data-aos-duration="1000">
+                                <select name="department"  style="color:white" >
+                                    <option value="" selected disabled  style= "color:black;">Choose your Department</option>
+                                    <option value="Aerospace Engineering" style= "color:black;">Aerospace Engineering</option>
+                                    <option value="Biosciences and Bioengineering" style= "color:black;">Biosciences and Bioengineering</option>
+                                    <option value="Centre of Studies in Resources Engineering (CSRE)" style= "color:black;">Centre of Studies in Resources Engineering (CSRE)</option>
+                                    <option value="Chemical Engineering" style= "color:black;">Chemical Engineering</option>
+                                    <option value="Chemistry" style= "color:black;">Chemistry</option>                          
+                                    <option value="Civil Engineering" style= "color:black;">Civil Engineering</option>
+                                    <option value="Computer Science & Engineering" style= "color:black;">Computer Science & Engineering</option>
+                                    <option value="Earth Sciences" style= "color:black;">Earth Sciences</option>
+                                    <option value="Electrical Engineering" style= "color:black;">Electrical Engineering</option>
+                                    <option value="Energy Science and Engineering" style= "color:black;">Energy Science and Engineering</option>
+                                    <option value="Environmental Science and Engineering" style= "color:black;">Environmental Science and Engineering</option>
+                                    <option value="Humanities & Social Science" style= "color:black;">Humanities & Social Science</option>
+                                    <option value="Humanities & Social Science" style= "color:black;">Economics</option>
+                                    <option value="Industrial Design Centre" style= "color:black;"> Industrial Design Centre</option>
+                                    <option value="Industrial Engineering and Operations Research(IEOR)" style= "color:black;">Industrial Engineering and Operations Research(IEOR)</option>
+                                    <option value="Mathematics" style= "color:black;">Mathematics</option>
+                                    <option value="Mechanical Engineering" style= "color:black;">Mechanical Engineering</option>
+                                    <option value="Metallurgical Engineering & Materials Science" style= "color:black;">Metallurgical Engineering & Materials Science</option>
+                                    <option value="System and Control Engineering" style= "color:black;">System and Control Engineering</option>
+                                    <option value="Physics">Physics</option>
+                                    <option value="Shailesh J. Mehta School of Managemen" style= "color:black;">Shailesh J. Mehta School of Managemen</option>
+                                </select>
+                             </div>
+                             <br>
+                             <div class="input-group"data-aos="fade-down-right" data-aos-duration="1000">
+                             <select name="year"  style="color:white" style="color:white">
+                                <option value="" selected disabled style= "color:black;">Programme of Study</option>
+                                 <option value="Undergraduate(UG)" style= "color:black;">Undergraduate(UG) </option>
+                                 <option value="Postgraduate(PG)" style= "color:black;">Postgraduate(PG)</option>
+                                 <option value="Doctorate(PhD)" style= "color:black;">Doctorate(PhD)</option>
+                             </select>
+                             </div>
+                             <br>
+                            <input type="password" id="pass1" data-aos="fade-down-right" data-aos-duration="1000" style="color:white" name ="pass1" placeholder="Create a Password" required>
+                            <br>
+                            <input type="password" id="pass2"data-aos="fade-down-right" data-aos-duration="1000"  style="color:white" name ="pass2" placeholder="Confirm Your Password" required>
+                            <br>
+                            <div class="signup" data-aos="fade-down-right" data-aos-duration="1000">
+                                <button type="submit" class="custom-btn btn-11">Register</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <br>
+                    <p style="color:white">Already have an account? <a href="/login" id="login" style="text-decoration: none; color:rgb(0, 0, 0)">Login</a></p>
+                </div>
+            </div>
+            
+            
+
+        </div>
+       
+    
+       
+    </div>
+    <script>
+        function guide() {
+    var x = document.getElementById("guide");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+    </script>
+
+    {% endblock content %}

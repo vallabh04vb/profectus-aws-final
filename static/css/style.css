@@ -1,0 +1,1075 @@
+
+ 
+.bgimg{
+    z-index: -1;
+}
+
+.title{
+    color: #000000;
+}
+
+.p-container{
+    margin: 0;
+}
+
+.land-container-1{
+    height: 100vh;
+    
+}
+
+.land-container-2{
+    height: 100vh;
+}
+
+.testimonial{
+    height: 65vh;
+    
+}
+
+.faq{
+    height: 70vh;
+}
+
+.footer{
+    height: 45vh;
+    background: #000000;
+}
+
+.reg-container{
+    background-image:linear-gradient(#ffffff,rgb(246, 172, 246));
+    height: 100%;
+    width: 95vw;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    margin: 5vh 0;
+}
+
+.l-reg-container{
+    background-image:linear-gradient(#ffffff,rgb(255, 255, 255));
+    height: 90vh;
+    width: 95vw;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    margin: 5vh 0;
+}
+
+.reg-outer-container{
+    /* height: 80vh; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
+.form{
+    border: 1px solid rgb(4, 4, 4);
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5vh;
+    background: rgba( 255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(47, 60, 244, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 180%;
+    border-radius: 1vh;
+    margin: 5vh 0;
+  
+   
+
+}
+.l-form{
+    border: 1px solid white;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5vh;
+    background: rgba( 255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1vh;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* width: 180%; */
+    margin: 5vh 0;
+}
+
+.inner-form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: #ffffff;
+}
+
+
+select{
+    width: 15vw;
+    margin-bottom: 2.5vh;
+}
+
+
+.btn-11 {
+    background-color: transparent;
+    padding: 1vh;
+    width: 20vh;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(94, 94, 94), 0 0 5px rgb(114, 215, 255) inset;
+    transition: all 0.3s ease;
+  }
+  .btn-11:hover{
+     color: #66247c;
+    
+  }
+  #login:hover{
+    color:white ;
+  }
+ 
+.content{
+    display: flex;
+}
+
+.guideline{
+    position: fixed;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    right: 705px;
+    margin:0 5vh ;
+    font-family: cursive;
+}
+
+.prof-container{
+    height: 100vh;
+    background-image: linear-gradient(180deg, #A77DFF , rgba(240, 108, 156, 0.65) );
+    display: flex;
+}
+
+.sidenav{
+    /* border-right:1px solid black ; */
+    height: 100%; 
+    width: 16vw; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+  
+    overflow-x: hidden; 
+    /* margin: 1.5vh; */
+    background: rgba( 255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-top-right-radius: 1vh;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.sidenav > ul {
+    list-style: none;
+}
+
+.sidenav > ul >li > a{
+    text-decoration: none;
+    padding: 2vh 1vh;
+}
+
+.iaf-content{
+    margin-left: 15vw;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: 16vw;
+    justify-content: space-between;
+   
+   
+    /* margin: 1.5vh; */
+    overflow-x: hidden; 
+    padding: 1.6vh 1vh;
+    background: #A77DFF;
+    box-shadow: 0 5px 30px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom-right-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 3;
+}
+
+.resume-direct{
+    display:flex;
+    flex-direction:column ;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 2vh 0;
+}
+
+.resume-direct > input{
+    margin: 1vh 0vh;
+    padding: 1vh;
+    color: white;
+    width: 40vh;
+}
+
+#resbtn{
+    border: 1px solid blueviolet;
+    margin-top: 1vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    /* width: 80%; */
+}
+
+.reg-outer-container{
+ 
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    color: rgb(0, 0, 0);
+}
+
+.generate-resume{
+    margin: 0;
+}
+
+.r-reg-container{
+    background-image:linear-gradient(#0d051b,rgb(39, 26, 39));
+    height: 100%;
+    width: 95vw;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    margin: 5vh 0;
+}
+
+
+#layer2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+#logo{
+    width: 10vw;
+    height: 14vh;
+    position: absolute;
+    top: 2vh;
+    left: 3vh;
+    
+}
+
+.new-nav{
+    position: absolute;
+    top: 2vh;
+    right: 0;
+}
+
+.new-nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+.new-nav > ul > li{
+    padding: 2vh 5vh;
+    color: #FFFFFFFF;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.title{
+    position: absolute;
+    left: 13vh;
+    top:26vh;
+    
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 170px;
+    line-height: 204px;
+    
+    color: #FFFFFF;
+}
+
+.sub-title{
+    
+    position: absolute;
+    left: 13.5vh;
+    top :44vh;
+    
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+
+    color: #FFFFFF;
+    
+}
+.regbtn{
+
+position: absolute;
+bottom: 25vh;
+left: 15vw;
+
+background: rgba(244, 242, 242, 0.65);
+border-radius: 14px;
+border: none;
+padding: 1.5vh 7vh;
+}
+
+button > a{
+font-family: 'Kanit';
+font-style: normal;
+font-weight: 500;
+font-size: 38px;
+line-height: 57px;
+text-decoration: none;
+color: #4A4848;
+
+}
+
+.about-profectus{
+    height: 50vh;
+    padding-left: 4vw;
+}
+.heading{
+
+    /* position: relative; */
+ 
+    padding-top: 8vh;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+
+    color: #91407E;
+   
+}
+
+.discription{
+    /* position: relative; */
+    padding-top: 3.5vh;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 3.5vh;
+    width: 60%;
+    color: #373636;
+    
+
+}
+
+.about-fellowship{
+    height: 50vh;
+    background: rgb(186, 156, 245 , 0.55);
+    padding-right: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#fellow-heading{
+    padding-top: 7vh ;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+
+    color: #EE558F;
+    text-align: right;
+}
+
+#fellow-discription{
+    padding-top: 3.5vh;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 3.5vh;
+    text-align: right;
+    width: 70%;
+    color: #474444;
+
+    text-align: right;
+}
+
+#contact-land{
+    text-align: center;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 33px;
+    padding-top: 3.5vh;
+    color: #F59CD6;
+}
+
+
+.profile{
+    display: flex;
+}
+
+
+.tab{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.26vh;
+    line-height: 3.98vh;
+    padding: 1vh 2vh;
+    color: #FFFFFF;
+}
+
+.on{
+    background: rgb(97, 97, 97 , 0.5);
+    border-radius: 1vh;
+}
+
+.name {
+    font-size: 4vh;
+}
+
+.dash-logo{
+   
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 70px;
+}
+.dash-logo a img{
+    vertical-align: middle;
+    border-style: none;
+    width: 151px;
+    left: 35px;
+    position: absolute;
+    top: 8px;
+}
+
+.iaf-lower-content{
+    margin-top: 13vh;
+    padding: 0 2vh;
+    z-index: -1;
+}
+
+.logout{
+    border-top: 1px solid purple;
+    position: absolute;
+    bottom: 2.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 17px;
+    border: none;
+    left: 531px;
+}
+
+.logout-btn{
+    
+    padding: 0;
+    font-size: 2vh;
+    background: none;
+    border: none;
+    font-size: 2vh;
+    text-align: center;
+    
+}
+
+.logout-btn > a{
+    font-size: 3vh;
+    color: white;
+}
+
+.logout-btn > a:hover{
+    color: rgb(104, 59, 94);
+}
+
+.logout-btn a {
+    text-decoration: none;
+  }
+
+.logo{
+    padding-top:2vh ;
+    width: 60%;
+    align-self:center ;
+}
+#preference{
+    top: 30px;
+}
+
+.outer-card{
+    margin: 2vh 2.5vh;
+}
+
+.title-inner{
+    text-align: center;
+    font-size: 3vh;
+}
+ 
+
+
+  
+  
+  
+  
+  
+ 
+  
+  
+
+  .col{
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .row{
+    margin-top: 3.5vh;  
+    margin-bottom: 3.5vhvh;
+  }
+
+  .inner-card{
+      text-align: left;
+      padding: 1vh;
+      
+  }
+
+  .nav-tab{
+    padding-left: 5vh;
+    font-size: 2vh;
+    color: white;
+    margin: 3.5vh 0;
+    position: absolute;
+    right: 62px;
+    top: -21px;
+
+}
+
+.apply-btn{
+    background: transparent;
+    border: 1px solid purple;
+    color: white;
+    padding: 0.5vh 4vh;
+    border-radius: 1vh;
+    
+}
+
+.apply-btn:hover{
+background-color: rgb(104, 59, 94);
+color: white;
+}
+
+.managers{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+
+}
+
+.manage-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.department{
+    margin-top: 1.5vh ;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.pref-select{
+    margin: 1vh;
+    padding: 0.8vh;
+}
+
+.same{
+    background:transparent;
+    width: 54%;
+    border-radius: 0.5vh;
+}
+
+.bt{
+    padding: 0.5vh;
+    border: 1px solid rgb(79, 16, 94);
+}
+
+.custom-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test{
+    border: 0.5px solid black;
+    border-radius: 1vh;
+    margin: 2vh;
+    height: 40vh;
+    width: 35vw;
+}
+
+.custom{
+    display: flex;
+    justify-content: center;
+}
+
+.icon,.icon1{
+    display: none;
+}
+#myLink{
+    display: block;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.guideline{
+    position: fixed;
+    color: #FFFFFF;
+}
+
+
+/* Responsive CSS */
+
+/* laptop small screen */
+
+
+@media screen and (max-width:1024px) {
+    
+    #logo {
+        width: 14vw;
+        height: 12vh;
+    }
+    
+    .new-nav >ul >li {
+        font-size: 3vh;
+        padding: 2vh 3vh;
+    }
+    
+    .title{
+        left: 11vh;
+        top: 24vh;
+        font-size: 15vh;
+    }
+
+    .sub-title{
+        left: 11.5vh;
+        top: 41vh;
+        font-size: 5vh;
+    }
+
+    button >a {
+        font-size: 3vh;
+    }
+    .regbtn{
+        padding: 0.5vh 6vh;
+    }
+    .heading{
+        padding-top: 5vh;
+        font-size: 4vh;
+    }
+    .discription{
+        font-size: 2vh;
+    }
+    #fellow-heading{
+        padding-top: 5vh;
+        font-size: 4vh;
+    }
+    #fellow-discription{
+        padding-top: 1.5vh;
+        font-size: 2vh;
+    }
+    .about-fellowship{
+        height: 51vh;
+    }
+    #contact-land{
+        font-size: 4vh;
+    }
+    .managers{
+        font-size: 3.5vh;
+    }
+    .department{
+        font-size: 2.8vh;
+    }
+
+    .nav{
+        left: 29vw;
+    }
+    .iaf-content{
+        margin-left: 27vw;
+    }
+    .sidenav{
+        width: 27vw;
+    }
+
+    .form{
+        width: 142%;
+    }
+    .guideline{
+        width: 41%;
+        color: #FFFFFF;
+    }
+}
+
+
+
+/* Tablet View */
+
+@media screen and (max-width: 768px) {
+    .land-container-1,#layer2{
+        height: 92vh;
+    }
+    .new-nav >ul >li {
+        font-size: 2.5vh;
+        padding: 2vh 3vh;
+    }
+    #logo{
+        width: 19vw;
+    }
+    .title{
+        font-size: 13vh;
+    }
+    .about-profectus{
+        height: 42vh;
+        padding: 0 3vw;
+    }
+    .discription{
+        width: auto;
+    }
+    .about-fellowship{
+        height: 53vh;
+        padding: 0 4vw;
+    }
+    #fellow-discription{
+        width: auto;
+    }
+
+    .custom-col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial{
+        height: 105vh;
+    }
+
+    .land-container-2{
+        height: 95vh;
+    }
+    
+    .test{
+        width: 52vw;
+    }
+    .managers{
+        font-size: 2.5vh;
+    }
+    .department{
+        font-size: 2vh;
+    }
+
+    label,input{
+        width: 24.5vw;
+    }
+    #guide{
+        color: #FFFFFF;
+        
+    }
+    .icon1{
+        display: block;
+        position: absolute;
+        top: 2vh;
+        left: 6vw;
+        color: white;
+        font-size: 3vh;
+        z-index: 12;
+        border: 1px solid white;
+        padding: 0 1vh;
+    }
+    .reg-inner-container{
+        position: absolute;
+        top: 5vh;
+        left: 20vw;
+        z-index: -1;
+    }
+    .guideline{
+        margin: 0;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.7);
+        top: 0;
+        left: 0;
+        padding: 2vh;
+        width: 60%;
+        color: #FFFFFF;
+    }
+    .l-reg-inner-container{
+        position: absolute;
+    
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+/* mobile */
+
+ @media screen and (max-width:425px) {
+   /* #layer2,.land-container-1{
+        height: 72vh;
+    }
+    #logo{
+        height: 9vh;
+        width: 26vw;
+        top: 1vh;
+    }
+    .title{
+        left: 5vh;
+        top: 15vh;
+        font-size: 8vh;
+    }
+    .sub-title {
+        left: 5vh;
+        top: 28.5vh;
+        font-size: 3vh;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        top: 2vh;
+        right: 6vw;
+        color: white;
+        font-size: 3.5vh;
+        z-index: 12;
+    }
+
+    #myLinks,#myPref{
+        display: none;
+    }
+
+    .regbtn{
+        padding: 0vh 6vh;
+        bottom: 50vh;
+        left: 12vw;
+    }
+    button >a {
+        font-size: 2.5vh;
+    }
+    .new-nav >ul >li {
+        font-size: 2vh;
+        padding: 0vh 1vh;
+    }
+    .new-nav > ul {
+        display: flex;
+       
+        list-style: none;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .new-nav {
+        position: absolute;
+        top: 11vh;
+        right: 3.5vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba( 255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+    
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border-bottom-left-radius: 1.5vh;
+        border-bottom-right-radius: 1.5vh;
+    }
+
+    .heading {
+        padding-top: 3vh;
+        font-size: 3vh;
+    }
+    
+    .discription{
+        font-size: 1.7vh;
+        padding-top: 2.5vh;
+        line-height: 2.5vh;
+    }
+
+    #fellow-heading {
+        padding-top: 2vh;
+        font-size: 3vh;
+    }
+    #fellow-discription{
+        padding-top: 1.5vh;
+        font-size: 1.7vh;
+        line-height: 2.5vh;
+    }
+    .test{
+        width: 70vw;
+    }
+    .managers{
+        margin-top: 3vh;
+        flex-direction: column;
+    }
+    .department{
+        margin-top: 0.5vh;
+    }
+    .manage-inner{
+        margin-bottom: 2vh ;
+    }
+
+    
+    .iaf-content{
+        margin-left:0 ;
+    }
+    .nav{
+        right: 0;
+        left: 0;
+    }
+    .sidenav{
+        z-index: 5;
+        width: 67vw;
+        background: rgba(0,0,0,0.7);
+    }
+    label{
+        color: white;
+        
+        width: 100%;
+    }
+    input{
+        color: white;
+        background: rgba(0,0,0,0.7);
+        width: 100%;
+        border: 0.5px solid white;
+    }
+    .apply-btn{
+        border: 1px solid white;
+    }*/
+    .form{
+        position: relative;
+        right: 10px;
+        width: 100%;
+        top: -59px;
+        height: 85%;
+    }
+    /*
+    .reg-inner-container{
+        left: 6vw;
+    }*/
+    .guideline{
+        width: 84%;
+        color: #FFFFFF;
+        top: 150px;
+    }
+    
+} 
+.guidediv{
+    color: #d25a5a;
+}
+
+@media screen and (max-width:600px) {
+    .new-nav{
+        right: 2vh;
+    }
+    #fellow-heading{
+        font-size: 2.7vh;
+    }
+    #fellow-discription {
+        padding-top: 1vh;
+        font-size: 1.7vh;
+        line-height: 2.3vh;
+    }
+    .new-nav > ul{
+        flex-direction: column;
+    }
+    .new-nav{
+        top: 1vh;
+        right: 6vh;
+    }
+    .sub-title{
+        font-size: 2vh;
+    }
+    .about-profectus{
+        height: 47vh;
+    }
+    #fellow-heading{
+        font-size: 2.2vh;
+    }
+    .about-fellowship{
+        height: 60vh;
+    }
+
+    h1{
+        margin-top: 16vh;
+    }
+    .form{
+        padding: 3vh;
+    }
+    .guideline{
+        width: 96%;
+        color: white;
+    }
+    .testimonial{
+        padding-top: 12vh;
+    }
+}
+
+

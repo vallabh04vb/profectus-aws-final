@@ -1,0 +1,7 @@
+@media screen and (max-width=425px) {
+    .guideline{
+      top: 120px;
+      color: red!important;
+      position: unset;
+    }
+  }

@@ -1,0 +1,81 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>  -->
+
+ {% extends 'authentication/base.html' %}
+    {% block content %}
+ 
+    {% if messages %}
+    {% for message in messages%}
+    <div class="alert alert-{{ messages.tags }} alert-dismissible fade show" style="z-index:999;width: 100%; background: white;  top: 0px; position: absolute; left: 0;" role="alert" style="margin: 0">
+      <strong>{{ message }}</strong>
+      <button type="button" id="close" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %} 
+    {%endif%}
+    {% comment %} <h1>Login</h1> {% endcomment %}
+    <style>
+        input{
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 0.5vh;
+            padding: 1vh;
+        }
+    </style>
+    <div class="reg-outer-container">
+        <img
+        class="depositphotos-201446926-stock-icon"
+        alt=""
+        id="loginbg"
+        src="./static/images/public/depositphotos-201446926stockphotogradientbackgroundblacknightdark-2@2x.png"
+      /> 
+      <div class="dash-logo">
+        <a href="https://www.abhyudayiitb.org/"
+          ><img id="alogo" src="./static/images/public/logo-hoodie-1@2x.png" alt=""
+        /></a>
+      </div>
+    
+            <div class="l-reg-inner-container">
+                <div class="l-form">
+    
+                    
+                    <form action="/login" method="post">
+                        <div class="inner-form">
+                           
+                            {% csrf_token %}
+                            <!-- <label for="">Username</label> -->
+                            <input type="text" id="username" name ="username" placeholder="Enter Your username" required>
+                            <br>
+                            <!-- <label for="">Name</label> -->
+                            <input type="password" id="pass1" name ="pass1" placeholder="Enter Your Password" required>   
+                            <br>
+                            <div class="signup">
+                                <button type="submit" class="custom-btn btn-11"> Login</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <br>
+                    <p style="color:white">Don't have an account ? <a href="/signup" style="text-decoration: none; color:rgb(110, 47, 146)">Register</a></p>
+                </div>
+            </div>
+            
+        
+       
+        <!-- <h1>Sign Up</h1> -->
+    </div>
+
+       
+    {% endblock content %}
+       
+       
+{% comment %}     
+</body>
+</html> {% endcomment %}
