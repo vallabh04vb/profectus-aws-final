@@ -267,7 +267,7 @@ def apply(request):
         return render(request, "authentication/index.html")
 
 
-    
+      
 
 
 
